@@ -21,6 +21,7 @@ RCT_EXPORT_METHOD(createCalendarEvent:(NSString *)title
                  resolver:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)
 {
+ RCTLogInfo(@"Pretending to create an event %@ at %@", title, location);
  NSInteger eventId = '13'; // do something async
  if (eventId) {
     resolve(@(eventId));
