@@ -11,6 +11,14 @@
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
 
+  self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+
+  UIViewController *rootVC = self.window.rootViewController;
+
+  UINavigationController *rootController = [[UINavigationController alloc] initWithRootViewController: rootVC];
+
+  self.window.rootViewController = rootController;
+
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 

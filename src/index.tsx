@@ -17,6 +17,6 @@ const MiSnapLib = NativeModules.MiSnapLib
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return MiSnapLib.multiply(a, b);
+export function openCamera(type: string, license: string): Promise<[string]> {
+  return MiSnapLib.openCamera(type, license);
 }

@@ -12,6 +12,21 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		61F26FDF299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FCA299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait.jpg */; };
+		61F26FE0299332DB00AEC66A /* MiSnapLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FCC299332DB00AEC66A /* MiSnapLocalizable.strings */; };
+		61F26FE1299332DB00AEC66A /* MiSnapLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FCF299332DB00AEC66A /* MiSnapLocalizable.strings */; };
+		61F26FE2299332DB00AEC66A /* misnap_tutorial_id_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FD1299332DB00AEC66A /* misnap_tutorial_id_portrait.jpg */; };
+		61F26FE3299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FD2299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait_2.jpg */; };
+		61F26FE4299332DB00AEC66A /* misnap_tutorial_id_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FD3299332DB00AEC66A /* misnap_tutorial_id_portrait_2.jpg */; };
+		61F26FE5299332DB00AEC66A /* misnap_tutorial_passport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FD4299332DB00AEC66A /* misnap_tutorial_passport.jpg */; };
+		61F26FE6299332DB00AEC66A /* misnap_tutorial_passport_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FD5299332DB00AEC66A /* misnap_tutorial_passport_portrait.jpg */; };
+		61F26FE7299332DB00AEC66A /* misnap_tutorial_passport_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FD6299332DB00AEC66A /* misnap_tutorial_passport_portrait_2.jpg */; };
+		61F26FE8299332DB00AEC66A /* misnap_tutorial_id_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FD7299332DB00AEC66A /* misnap_tutorial_id_back.jpg */; };
+		61F26FE9299332DB00AEC66A /* misnap_tutorial_id_back_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FD8299332DB00AEC66A /* misnap_tutorial_id_back_portrait.jpg */; };
+		61F26FEA299332DB00AEC66A /* MiSnapLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FDA299332DB00AEC66A /* MiSnapLocalizable.strings */; };
+		61F26FEB299332DB00AEC66A /* misnap_tutorial_id.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FDC299332DB00AEC66A /* misnap_tutorial_id.jpg */; };
+		61F26FEC299332DB00AEC66A /* misnap_tutorial_id_back_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FDD299332DB00AEC66A /* misnap_tutorial_id_back_portrait_2.jpg */; };
+		61F26FED299332DB00AEC66A /* misnap_tutorial_passport_qr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 61F26FDE299332DB00AEC66A /* misnap_tutorial_passport_qr.jpg */; };
 		7699B88040F8A987B510C191 /* libPods-MiSnapLibExample-MiSnapLibExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MiSnapLibExample-MiSnapLibExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C78B158829886B8000527C66 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C78B158729886B8000527C66 /* RCTCalendarModule.m */; };
@@ -43,6 +58,21 @@
 		5709B34CF0A7D63546082F79 /* Pods-MiSnapLibExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiSnapLibExample.release.xcconfig"; path = "Target Support Files/Pods-MiSnapLibExample/Pods-MiSnapLibExample.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-MiSnapLibExample-MiSnapLibExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiSnapLibExample-MiSnapLibExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-MiSnapLibExample-MiSnapLibExampleTests/Pods-MiSnapLibExample-MiSnapLibExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-MiSnapLibExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiSnapLibExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F26FCA299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_passport_qr_portrait.jpg; path = MiSnap/misnap_tutorial_passport_qr_portrait.jpg; sourceTree = "<group>"; };
+		61F26FCD299332DB00AEC66A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = MiSnapLocalizable.strings; sourceTree = "<group>"; };
+		61F26FD0299332DB00AEC66A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = MiSnapLocalizable.strings; sourceTree = "<group>"; };
+		61F26FD1299332DB00AEC66A /* misnap_tutorial_id_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_id_portrait.jpg; path = MiSnap/misnap_tutorial_id_portrait.jpg; sourceTree = "<group>"; };
+		61F26FD2299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_passport_qr_portrait_2.jpg; path = MiSnap/misnap_tutorial_passport_qr_portrait_2.jpg; sourceTree = "<group>"; };
+		61F26FD3299332DB00AEC66A /* misnap_tutorial_id_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_id_portrait_2.jpg; path = MiSnap/misnap_tutorial_id_portrait_2.jpg; sourceTree = "<group>"; };
+		61F26FD4299332DB00AEC66A /* misnap_tutorial_passport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_passport.jpg; path = MiSnap/misnap_tutorial_passport.jpg; sourceTree = "<group>"; };
+		61F26FD5299332DB00AEC66A /* misnap_tutorial_passport_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_passport_portrait.jpg; path = MiSnap/misnap_tutorial_passport_portrait.jpg; sourceTree = "<group>"; };
+		61F26FD6299332DB00AEC66A /* misnap_tutorial_passport_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_passport_portrait_2.jpg; path = MiSnap/misnap_tutorial_passport_portrait_2.jpg; sourceTree = "<group>"; };
+		61F26FD7299332DB00AEC66A /* misnap_tutorial_id_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_id_back.jpg; path = MiSnap/misnap_tutorial_id_back.jpg; sourceTree = "<group>"; };
+		61F26FD8299332DB00AEC66A /* misnap_tutorial_id_back_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_id_back_portrait.jpg; path = MiSnap/misnap_tutorial_id_back_portrait.jpg; sourceTree = "<group>"; };
+		61F26FDB299332DB00AEC66A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MiSnapLocalizable.strings; sourceTree = "<group>"; };
+		61F26FDC299332DB00AEC66A /* misnap_tutorial_id.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_id.jpg; path = MiSnap/misnap_tutorial_id.jpg; sourceTree = "<group>"; };
+		61F26FDD299332DB00AEC66A /* misnap_tutorial_id_back_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_id_back_portrait_2.jpg; path = MiSnap/misnap_tutorial_id_back_portrait_2.jpg; sourceTree = "<group>"; };
+		61F26FDE299332DB00AEC66A /* misnap_tutorial_passport_qr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = misnap_tutorial_passport_qr.jpg; path = MiSnap/misnap_tutorial_passport_qr.jpg; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MiSnapLibExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-MiSnapLibExample-MiSnapLibExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiSnapLibExample-MiSnapLibExampleTests.release.xcconfig"; path = "Target Support Files/Pods-MiSnapLibExample-MiSnapLibExampleTests/Pods-MiSnapLibExample-MiSnapLibExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		C78B158329886A1500527C66 /* RCTCalendarModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCalendarModule.h; sourceTree = "<group>"; };
@@ -90,6 +120,7 @@
 		13B07FAE1A68108700A75B9A /* MiSnapLibExample */ = {
 			isa = PBXGroup;
 			children = (
+				61F26FC9299332B100AEC66A /* Assets */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -108,6 +139,55 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-MiSnapLibExample-MiSnapLibExampleTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61F26FC9299332B100AEC66A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				61F26FD9299332DB00AEC66A /* en.lproj */,
+				61F26FCB299332DB00AEC66A /* es.lproj */,
+				61F26FCE299332DB00AEC66A /* fr.lproj */,
+				61F26FDD299332DB00AEC66A /* misnap_tutorial_id_back_portrait_2.jpg */,
+				61F26FD8299332DB00AEC66A /* misnap_tutorial_id_back_portrait.jpg */,
+				61F26FD7299332DB00AEC66A /* misnap_tutorial_id_back.jpg */,
+				61F26FD3299332DB00AEC66A /* misnap_tutorial_id_portrait_2.jpg */,
+				61F26FD1299332DB00AEC66A /* misnap_tutorial_id_portrait.jpg */,
+				61F26FDC299332DB00AEC66A /* misnap_tutorial_id.jpg */,
+				61F26FD6299332DB00AEC66A /* misnap_tutorial_passport_portrait_2.jpg */,
+				61F26FD5299332DB00AEC66A /* misnap_tutorial_passport_portrait.jpg */,
+				61F26FD2299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait_2.jpg */,
+				61F26FCA299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait.jpg */,
+				61F26FDE299332DB00AEC66A /* misnap_tutorial_passport_qr.jpg */,
+				61F26FD4299332DB00AEC66A /* misnap_tutorial_passport.jpg */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		61F26FCB299332DB00AEC66A /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				61F26FCC299332DB00AEC66A /* MiSnapLocalizable.strings */,
+			);
+			name = es.lproj;
+			path = MiSnap/es.lproj;
+			sourceTree = "<group>";
+		};
+		61F26FCE299332DB00AEC66A /* fr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				61F26FCF299332DB00AEC66A /* MiSnapLocalizable.strings */,
+			);
+			name = fr.lproj;
+			path = MiSnap/fr.lproj;
+			sourceTree = "<group>";
+		};
+		61F26FD9299332DB00AEC66A /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				61F26FDA299332DB00AEC66A /* MiSnapLocalizable.strings */,
+			);
+			name = en.lproj;
+			path = MiSnap/en.lproj;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -224,6 +304,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				fr,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
@@ -248,8 +330,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F26FE1299332DB00AEC66A /* MiSnapLocalizable.strings in Resources */,
+				61F26FEC299332DB00AEC66A /* misnap_tutorial_id_back_portrait_2.jpg in Resources */,
+				61F26FEA299332DB00AEC66A /* MiSnapLocalizable.strings in Resources */,
+				61F26FE9299332DB00AEC66A /* misnap_tutorial_id_back_portrait.jpg in Resources */,
+				61F26FE5299332DB00AEC66A /* misnap_tutorial_passport.jpg in Resources */,
+				61F26FE6299332DB00AEC66A /* misnap_tutorial_passport_portrait.jpg in Resources */,
+				61F26FE3299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait_2.jpg in Resources */,
+				61F26FE2299332DB00AEC66A /* misnap_tutorial_id_portrait.jpg in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				61F26FE4299332DB00AEC66A /* misnap_tutorial_id_portrait_2.jpg in Resources */,
+				61F26FE7299332DB00AEC66A /* misnap_tutorial_passport_portrait_2.jpg in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				61F26FEB299332DB00AEC66A /* misnap_tutorial_id.jpg in Resources */,
+				61F26FED299332DB00AEC66A /* misnap_tutorial_passport_qr.jpg in Resources */,
+				61F26FE8299332DB00AEC66A /* misnap_tutorial_id_back.jpg in Resources */,
+				61F26FDF299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait.jpg in Resources */,
+				61F26FE0299332DB00AEC66A /* MiSnapLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +532,33 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		61F26FCC299332DB00AEC66A /* MiSnapLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61F26FCD299332DB00AEC66A /* es */,
+			);
+			name = MiSnapLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		61F26FCF299332DB00AEC66A /* MiSnapLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61F26FD0299332DB00AEC66A /* fr */,
+			);
+			name = MiSnapLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		61F26FDA299332DB00AEC66A /* MiSnapLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61F26FDB299332DB00AEC66A /* en */,
+			);
+			name = MiSnapLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -494,6 +618,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4PD4ZWXG48;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MiSnapLibExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,7 +631,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.viacash.myvia;
 				PRODUCT_NAME = MiSnapLibExample;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -521,6 +646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4PD4ZWXG48;
 				INFOPLIST_FILE = MiSnapLibExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,7 +658,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.viacash.myvia;
 				PRODUCT_NAME = MiSnapLibExample;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

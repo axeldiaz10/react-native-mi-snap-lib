@@ -24,6 +24,9 @@ end
 target 'MiSnapLibExample' do
   config = use_native_modules!
 
+  pod 'MiSnap'
+  pod 'MiSnapUX'
+  
   # Flags change depending on the env values.
   flags = get_default_flags()
 

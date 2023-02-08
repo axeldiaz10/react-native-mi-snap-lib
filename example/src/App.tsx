@@ -1,14 +1,13 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
-import { multiply } from 'react-native-mi-snap-lib';
-import NativeCalendarModule from './NativeCalendarModule';
+import { openCamera } from 'react-native-mi-snap-lib';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<[string] | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    openCamera("front","").then(setResult);
   }, []);
 
   const handleSuccess = (eventId: any) => {
@@ -22,11 +21,7 @@ export default function App() {
   const handlePress = async () => {
     console.log('do somethig');
     try {
-      const eventId = await NativeCalendarModule.createCalendarEvent(
-        'Party',
-        'my house'
-      );
-      handleSuccess(eventId);
+     openCamera("front", "LICENCE_KEY_HERE").then(setResult)
     } catch (e) {
       handleError(e);
     }
