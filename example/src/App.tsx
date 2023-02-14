@@ -7,7 +7,7 @@ export default function App() {
   const [result, setResult] = React.useState<[string] | undefined>();
 
   React.useEffect(() => {
-    openCamera("front","").then(setResult);
+   // openCamera("front","").then(setResult);
   }, []);
 
   const handleSuccess = (eventId: any) => {
@@ -21,7 +21,7 @@ export default function App() {
   const handlePress = async () => {
     console.log('do somethig');
     try {
-     openCamera("front", "LICENCE_KEY_HERE").then(setResult)
+     openCamera("front", "").then(setResult)
     } catch (e) {
       handleError(e);
     }

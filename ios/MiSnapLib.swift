@@ -3,6 +3,7 @@ import MiSnapCamera
 import MiSnapLicenseManager
 import MiSnapUX
 
+import UIKit
 import Foundation
 
 @objc(MiSnapLib)
@@ -78,8 +79,11 @@ extension MiSnapLib: MiSnapViewControllerDelegate {
     }
 
     func miSnapSuccess(_ result: MiSnapResult) {
-        self.viewController?.dismiss(animated: true)
         resolver?([result.encodedImage, saveImage(image: result.image)])
+        self.viewController?.dismiss(animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.viewController?.dismiss(animated: true)
+        }
     }
 
     func miSnapCancelled(_ result: MiSnapResult) {
@@ -138,16 +142,11 @@ extension MiSnapLib {
     func present(_ viewController: UIViewController) {
         viewController.view.backgroundColor = .gray
 
-        let navigator = UINavigationController.init(rootViewController: viewController)
         let delegate = UIApplication.shared.delegate
 
         let rootVC = delegate?.window??.rootViewController
 
-        let value = UIInterfaceOrientation.landscapeLeft.rawValue
-        UIDevice.current.setValue(value, forKey: "orientation")
-        UIViewController.attemptRotationToDeviceOrientation()
-
-        rootVC?.present(navigator, animated: true)
+        rootVC?.present(viewController, animated: true)
     }
 }
 

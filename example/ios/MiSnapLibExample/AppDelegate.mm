@@ -1,6 +1,15 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <React/RCTRootView.h>
+#import <React/RCTBundleURLProvider.h>
+
+@interface AppDelegate()
+
+  // keep a reference to the React Native VC
+@property (nonatomic, strong) UIViewController *reactNativeViewController;
+
+@end
 
 @implementation AppDelegate
 
@@ -10,14 +19,22 @@
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
+  NSURL *jsCodeLocation;
+  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
+
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                      moduleName:self.moduleName
+                                               initialProperties:self.initialProps
+                                                   launchOptions:launchOptions];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
-  UIViewController *rootVC = self.window.rootViewController;
+    // keep a reference to the React Native VC
+  self.reactNativeViewController = [[UIViewController alloc] init];
+  self.reactNativeViewController.view = rootView;
 
-  UINavigationController *rootController = [[UINavigationController alloc] initWithRootViewController: rootVC];
-
-  self.window.rootViewController = rootController;
+  self.window.rootViewController = self.reactNativeViewController;
+  [self.window makeKeyAndVisible];
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }

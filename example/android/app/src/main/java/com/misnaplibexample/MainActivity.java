@@ -1,11 +1,21 @@
 package com.misnaplibexample;
 
+import static java.sql.DriverManager.println;
+
+import android.content.Intent;
+import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
+import com.misnaplib.MainActivityResult;
 
-public class MainActivity extends ReactActivity {
+import java.util.concurrent.Callable;
+
+public class MainActivity extends ReactActivity implements MainActivityResult {
 
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule
@@ -37,4 +47,22 @@ protected void onCreate(Bundle savedInstanceState) {
         DefaultNewArchitectureEntryPoint.getConcurrentReactEnabled() // concurrentRootEnabled
         );
   }
+
+  Callable<Void> onActivityResult;
+
+  @Override
+  public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    try {
+      onActivityResult.call();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  @Override
+  public void registerForActivityResult(@NonNull Callable<Void> activityResult) {
+    this.onActivityResult = activityResult;
+  }
 }
+
