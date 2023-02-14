@@ -79,7 +79,7 @@ extension MiSnapLib: MiSnapViewControllerDelegate {
     }
 
     func miSnapSuccess(_ result: MiSnapResult) {
-        resolver?([result.encodedImage, saveImage(image: result.image)])
+        resolver?(result.encodedImage)
         self.viewController?.dismiss(animated: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.viewController?.dismiss(animated: true)

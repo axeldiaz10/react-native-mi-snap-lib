@@ -17,6 +17,6 @@ const MiSnapLib = NativeModules.MiSnapLib
       }
     );
 
-export function openCamera(type: string, license: string): Promise<[string]> {
+export function openCamera(type: string, license: string): Promise<string> {
   return MiSnapLib.openCamera(type, license);
 }
