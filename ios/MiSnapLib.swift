@@ -10,42 +10,12 @@ import Foundation
 class MiSnapLib: NSObject {
     var resolver: RCTPromiseResolveBlock? = nil
     var rejecter: RCTPromiseRejectBlock? = nil
-    var viewController: MiSnapViewController? = nil
+    weak var viewController: MiSnapViewController? = nil
 
-    private let template = MiSnapConfiguration()
-        .withCustomHint { hint in
-            hint.size = hint.size.scaled(by: 1.5)
-        }
-        .withCustomGuide(completion: { guide in
-            guide.outline.alpha = 50
-        })
-        .withCustomUxParameters { uxParameters in
-            uxParameters.timeout = 45
-            uxParameters.showTimeoutScreen = true
-            uxParameters.showHelpScreen = true
-            uxParameters.hintUpdatePeriod = 5
-        }
-        .withCustomLocalization { localization in
-            localization.bundle = Bundle.main
-            localization.stringsName = "MiSnapLocalizable"
-        }
-        .withCustomParameters { parameter in
-            parameter.camera.torchMode = .on
-            parameter.camera.showRecordingUI = true
-            parameter.camera.recordVideo = false
-            parameter.compression = 30
-            parameter.science.minBrightness = 400
-            parameter.science.maxBrightness = 900
-            parameter.science.cornerConfidence = 150
-            parameter.science.landscapeFill = 800
-            parameter.science.portraitFill = 800
-            parameter.science.sharpness = 300
-            parameter.frameDelay = 3
-        }
-
-    @objc(openCamera:withLicense:withResolver:withRejecter:)
+    @objc(openCamera:withLicense:withLanguage:withResolver:withRejecter:)
     func openCamera(for type: String,
                     withLicense: String,
+                    withLanguage: String,
                     resolve: @escaping RCTPromiseResolveBlock,
                     reject: @escaping RCTPromiseRejectBlock) {
         self.resolver = resolve
@@ -53,13 +23,27 @@ class MiSnapLib: NSObject {
 
         MiSnapLicenseManager.shared().setLicenseKey(withLicense)
 
+        print(self.parseLanguage(from: withLanguage))
+
         DispatchQueue.main.async {
             let configuration = MiSnapConfiguration(for: self.parseDocumentType(from: type))
-                .applying(self.template)
+                .withCustomLocalization(completion: { localization in
+                    localization.bundle = Bundle.main
+                    localization.stringsName = self.parseLanguage(from: withLanguage)
+                })
+
             let misnapVC = MiSnapViewController(with: configuration, delegate: self)
             self.viewController = misnapVC
 
             self.presentMiSnap(misnapVC)
+        }
+    }
+
+    private func parseLanguage(from string: String) -> String {
+        if string.lowercased() == "es" {
+            return "LocalizableES"
+        } else {
+            return "LocalizableEN"
         }
     }
 
