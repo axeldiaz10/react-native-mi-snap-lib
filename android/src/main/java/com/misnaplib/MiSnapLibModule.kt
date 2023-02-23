@@ -1,6 +1,5 @@
 package com.misnaplib
 
-import android.content.Intent
 import android.util.Base64
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactApplicationContext
@@ -13,11 +12,11 @@ import com.miteksystems.misnap.workflow.MiSnapFinalResult
 import com.miteksystems.misnap.workflow.MiSnapWorkflowActivity
 import com.miteksystems.misnap.workflow.MiSnapWorkflowError
 import com.miteksystems.misnap.workflow.MiSnapWorkflowStep
-import com.miteksystems.misnap.workflow.fragment.DocumentAnalysisFragment
 import java.util.concurrent.Callable
 
 interface MainActivityResult {
   fun registerForActivityResult(activityResult: Callable<Void>)
+  fun setupLocale(language: String, applied: () -> Unit)
 }
 
 class MiSnapLibModule(reactContext: ReactApplicationContext) :
@@ -31,86 +30,36 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
   }
 
   @ReactMethod
-  fun openCamera(type: String, license: String, promise: Promise) {
-    val array = arrayOf("b54Img","fileURI")
+  fun setupLanguage(language: String) {
+    val currentActivityListener = (currentActivity as MainActivityResult)
+    currentActivityListener.setupLocale(language) {}
+  }
 
-    var useCase = MiSnapSettings.UseCase.CHECK_FRONT
+  @ReactMethod
+  fun openCamera(type: String, license: String, language: String, promise: Promise) {
+    println("MYSNAP Parameters: type:$type - license:$license - language: $language")
 
-    if (type == "back")
-      useCase = MiSnapSettings.UseCase.CHECK_BACK
+    val currentActivityListener = (currentActivity as MainActivityResult)
+    currentActivityListener.setupLocale(language) {
+      var useCase = MiSnapSettings.UseCase.CHECK_FRONT
+      if (type == "back")
+        useCase = MiSnapSettings.UseCase.CHECK_BACK
 
-    val settings = MiSnapSettings(
-      useCase = useCase,
-      license = license
-    )
+      val settings = MiSnapSettings(
+        useCase = useCase,
+        license = license
+      )
 
-    val defaultWorkflowSettings = DocumentAnalysisFragment.getDefaultWorkflowSettings(settings)
-    val workflowSettings = DocumentAnalysisFragment.buildWorkflowSettings(
-      reviewCondition = DocumentAnalysisFragment.ReviewCondition.WARNINGS,
-      misnapViewShouldShowBoundingBox = false,
-      misnapViewShouldShowGlareBox = false,
-      // "CameraInitialTimeoutInSeconds": 30,
-      timeoutDuration = 30000,
-      // "SmartBubbleAppearanceDelay": 3000,
-      hintDuration = 3000,
-      guideViewAlignedScalePercentage = defaultWorkflowSettings.guideViewUnalignedScalePercentage,
-      guideViewUnalignedScalePercentage = defaultWorkflowSettings.guideViewUnalignedScalePercentage,
-      // "CameraGuideImageStillCameraAlpha": 50,
-      // "CameraGuideImageStillCameraEnabled": 1
-      guideViewShowVignette = true,
-      hintViewShouldShowBackground = defaultWorkflowSettings.hintViewShouldShowBackground,
-      successViewShouldVibrate = defaultWorkflowSettings.successViewShouldVibrate,
-    )
+      settings.camera.apply {
+        profile = MiSnapSettings.Camera.Profile.DOCUMENT_BACK_CAMERA
+        videoRecord.recordSession = false
+      }
 
-    settings.workflow.add(
-      "Document Analysis Screen",
-      workflowSettings
-    )
-
-    settings.analysis.apply {
-      // "CameraVideoAutoCaptureProcess": 1,
-      document.trigger = MiSnapSettings.Analysis.Document.Trigger.AUTO
-      document.enableEnhancedManual = false
-      document.orientation = MiSnapSettings.Analysis.Document.Orientation.LANDSCAPE // landscape
-      document.documentExtractionRequirement = MiSnapSettings.Analysis.Document.ExtractionRequirement.OPTIONAL
-      document.barcodeExtractionRequirement = MiSnapSettings.Analysis.Document.ExtractionRequirement.OPTIONAL
-      document.check.geo = MiSnapSettings.Analysis.Document.Check.Geo.GLOBAL
-      document.redactOptionalData = false
-      document.advanced.cornerConfidence = 600
-      document.advanced.minPadding = 7
-      // "CameraViewfinderMinHorizontalFill": 800,
-      document.advanced.minHorizontalFillUnaligned = 800
-      // "CameraBrightness": 400,
-      document.advanced.minBrightness = 400
-      document.advanced.maxBrightness = 820
-      document.advanced.minContrast = 600
-      // "CameraViewfinderMinHorizontalFill": 800,
-      document.advanced.minHorizontalFillAligned = 800
-      document.advanced.minBusyBackground = 750
-      // "CameraDegreesThreshold": 150,
-      document.advanced.maxAngle = 150
-      // "CameraSharpness": 300,
-      document.advanced.minSharpness = 300
-      document.advanced.minNoGlare = 0
-      document.advanced.mrzConfidence = 800
+      startMiSnapSession(
+        MiSnapWorkflowStep(settings),
+        promise
+      )
     }
-
-    settings.camera.apply {
-      profile = MiSnapSettings.Camera.Profile.DOCUMENT_BACK_CAMERA
-      // "LightingVideo": 1,
-      // "LightingStillCamera": 1,
-      torchMode = MiSnapSettings.Camera.TorchMode.AUTO // auto flash
-
-      // "AllowVideoFrames": 0,
-      videoRecord.recordSession = false
-    }
-
-    startMiSnapSession(
-      MiSnapWorkflowStep(settings),
-      promise
-    )
-
-    // promise.resolve(array)
   }
 
   private fun startMiSnapSession(
@@ -162,15 +111,12 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
               }
               is MiSnapWorkflowError.Camera -> {
                 promise.reject("Camera", errorResult.toString())
-
               }
               is MiSnapWorkflowError.Cancelled -> {
                 promise.reject("Cancelled", errorResult.toString())
-
               }
               else -> {
                 promise.reject("Other", errorResult.toString())
-
               }
             }
           }
@@ -180,8 +126,10 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
       MiSnapWorkflowActivity.Result.clearResults()
       null
     }
-
+    println("MYSNAP Launching activity ")
     super.getCurrentActivity()?.startActivityForResult(intent, 123)
+    println("MYSNAP launched activity ")
+
   }
 
   private fun hasCameraSettings(settings: MiSnapSettings) =

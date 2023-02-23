@@ -2,10 +2,17 @@ package com.misnaplibexample;
 
 import static java.sql.DriverManager.println;
 
+import android.app.LocaleManager;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.LocaleList;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.os.LocaleListCompat;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -13,7 +20,13 @@ import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
 import com.misnaplib.MainActivityResult;
 
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Locale;
 import java.util.concurrent.Callable;
+
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
 
 public class MainActivity extends ReactActivity implements MainActivityResult {
 
@@ -49,6 +62,7 @@ protected void onCreate(Bundle savedInstanceState) {
   }
 
   Callable<Void> onActivityResult;
+  Function0<Unit> onLocaleSet;
 
   @Override
   public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -63,6 +77,41 @@ protected void onCreate(Bundle savedInstanceState) {
   @Override
   public void registerForActivityResult(@NonNull Callable<Void> activityResult) {
     this.onActivityResult = activityResult;
+  }
+
+  @Override
+  public void onConfigurationChanged(Configuration newConfig) {
+    super.onConfigurationChanged(newConfig);
+
+    try {
+      this.onLocaleSet.invoke();
+      this.onLocaleSet = null;
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+    System.out.println("MYSNAP New Locale Applied: " + newConfig.locale.toString());
+  }
+
+  @Override
+  public void setupLocale(@NotNull String language, @NotNull Function0<Unit> applied) {
+    String locale = "en-US";
+    if (language.equalsIgnoreCase("es")) {
+      locale = "es-US";
+    }
+
+    LocaleListCompat newLocale = LocaleListCompat.forLanguageTags(locale);
+
+    System.out.println("MYSNAP New Locale: " + newLocale.toLanguageTags() + " from "+ locale +" with input: " + language + " and old locale: "+AppCompatDelegate.getApplicationLocales().toLanguageTags());
+
+    if (AppCompatDelegate.getApplicationLocales().toLanguageTags().equals(newLocale.toLanguageTags())) {
+      System.out.println("MYSNAP Locale already applied");
+      applied.invoke();
+    } else {
+      this.onLocaleSet = applied;
+    }
+
+    AppCompatDelegate.setApplicationLocales(newLocale);
   }
 }
 

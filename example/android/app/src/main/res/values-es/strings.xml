@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- region HELP SCREEN -->
+
+  <string name="misnapWorkflowHelpFragmentCheckboxDontShowAgainLabel">No mostrar esto de nuevo</string>
+  <string name="misnapWorkflowHelpFragmentButtonContinueLabel">Continuar</string>
+
+  <!-- region AUTO TRIGGER -->
+
+  <string name="misnapWorkflowHelpFragmentBarcodeAutoMessage">Manténgase firme. <b>Tomaremos la foto por usted</b></string>
+  <string name="misnapWorkflowHelpFragmentNldBsnQrAutoMessage">Manténgase firme. <b>Tomaremos la foto por usted</b></string>
+  <string name="misnapWorkflowHelpFragmentCheckFrontAutoMessage">Manténgase firme. <b>Tomaremos la foto por usted</b></string>
+  <string name="misnapWorkflowHelpFragmentCheckBackAutoMessage">Manténgase firme. <b>Tomaremos la foto por usted</b></string>
+  <string name="misnapWorkflowHelpFragmentIdFrontAutoMessage">Manténgase firme. <b>Tomaremos la foto por usted</b></string>
+  <string name="misnapWorkflowHelpFragmentIdBackAutoMessage">Manténgase firme. <b>Tomaremos la foto por usted</b></string>
+  <string name="misnapWorkflowHelpFragmentPassportAutoMessage">Manténgase firme. <b>Tomaremos la foto por usted</b></string>
+  <string name="misnapWorkflowHelpFragmentGenericAutoMessage1">Ponga el documento en una superficie oscura y bien iluminada</string>
+  <string name="misnapWorkflowHelpFragmentGenericAutoMessage2">Manténgase firme. <b>Tomaremos la foto por usted</b></string>
+
+  <!-- endregion -->
+
+  <!-- region MANUAL TRIGGER -->
+
+  <string name="misnapWorkflowHelpFragmentBarcodeManualMessage">Alinee el documento, manténgase firme y <b>presione el botón de disparo cuando esté listo</b></string>
+  <string name="misnapWorkflowHelpFragmentNldBsnQrManualMessage">Alinee el documento, manténgase firme y <b>presione el botón de disparo cuando esté listo</b></string>
+  <string name="misnapWorkflowHelpFragmentCheckFrontManualMessage">Alinee el documento, manténgase firme y <b>presione el botón de disparo cuando esté listo</b></string>
+  <string name="misnapWorkflowHelpFragmentCheckBackManualMessage">Alinee el documento, manténgase firme y <b>presione el botón de disparo cuando esté listo</b></string>
+  <string name="misnapWorkflowHelpFragmentIdFrontManualMessage">Alinee el documento, manténgase firme y <b>presione el botón de disparo cuando esté listo</b></string>
+  <string name="misnapWorkflowHelpFragmentIdBackManualMessage">Alinee el documento, manténgase firme y <b>presione el botón de disparo cuando esté listo</b></string>
+  <string name="misnapWorkflowHelpFragmentPassportManualMessage">Alinee el documento, manténgase firme y <b>presione el botón de disparo cuando esté listo</b></string>
+  <string name="misnapWorkflowHelpFragmentGenericManualMessage1">Ponga el documento en una superficie oscura y bien iluminada</string>
+  <string name="misnapWorkflowHelpFragmentGenericManualMessage2">Alinee el documento, manténgase firme y <b>presione el botón de disparo cuando esté listo</b></string>
+
+  <!-- endregion -->
+
+  <!-- region FACE TRIGGER -->
+
+  <string name="misnapWorkflowHelpFragmentFaceDoMessage">Por Favor:</string>
+  <string name="misnapWorkflowHelpFragmentFaceDontMessage">También:</string>
+  <string name="misnapWorkflowHelpFragmentFacePlainBackgroundMessage">Colóquese frente a un fondo uniforme</string>
+  <string name="misnapWorkflowHelpFragmentFaceCenterFaceMessage">Centre Su Rostro</string>
+  <string name="misnapWorkflowHelpFragmentFaceSmileWhenReadyMessage">Sonría cuando esté listo</string>
+  <string name="misnapWorkflowHelpFragmentFaceHoldStillWhenReadyMessage">Manténgase firme cuando esté listo</string>
+  <string name="misnapWorkflowHelpFragmentFacePressManualButtonWhenReadyMessage">Presione el botón de disparo cuando esté listo</string>
+  <string name="misnapWorkflowHelpFragmentFaceNoAccessoriesMessage">No oculte su cara con gorras, anteojos, bufandas, cabello…</string>
+  <string name="misnapWorkflowHelpFragmentFaceNoMasksMessage">Sin máscaras</string>
+
+  <!-- endregion -->
+
+  <!-- region VOICE -->
+
+  <string name="misnapWorkflowHelpFragmentVoiceHoldDeviceCloseMessage">Sostenga el dispositivo cerca de su boca.</string>
+  <string name="misnapWorkflowHelpFragmentVoiceAvoidNoiseMessage">Evite entornos ruidosos.</string>
+  <string name="misnapWorkflowHelpFragmentVoiceNoBluetoothHeadsetsMessage">No utilice dispositivos Bluetooth.</string>
+
+  <!-- endregion -->
+
+  <!-- endregion -->
+
+  <!-- region NAV GRAPH LABELS -->
+
+  <string name="misnapWorkflowDocumentAnalysisFlowHelpFragmentLabel">Ayuda</string>
+  <string name="misnapWorkflowDocumentAnalysisFlowDocumentAnalysisFragmentLabel">Análisis de Documento</string>
+  <string name="misnapWorkflowDocumentAnalysisFlowReviewFragmentLabel">Revisión de Documento</string>
+  <string name="misnapWorkflowDocumentAnalysisFlowFailoverFragmentLabel">Análisis Fallida</string>
+
+  <string name="misnapWorkflowBarcodeAnalysisFlowHelpFragmentLabel">Ayuda</string>
+  <string name="misnapWorkflowBarcodeAnalysisFlowBarcodeAnalysisFragmentLabel">Análisis de Código de Barras</string>
+  <string name="misnapWorkflowBarcodeAnalysisFlowReviewFragmentLabel">Revisión de Código de Barras</string>
+
+  <string name="misnapWorkflowFaceAnalysisFlowHelpFragmentLabel">Ayuda</string>
+  <string name="misnapWorkflowFaceAnalysisFlowFaceAnalysisFragmentLabel">Análisis de Rostro</string>
+  <string name="misnapWorkflowFaceAnalysisFlowFailoverFragmentLabel">Análisis Fallida</string>
+  <string name="misnapWorkflowFaceAnalysisFlowReviewFragmentLabel">Revisión de Rostro</string>
+
+  <string name="misnapWorkflowNfcReaderFlowNfcSelectionFragmentLabel">Pantalla de Selección NFC</string>
+  <string name="misnapWorkflowNfcReaderFlowNfcMrzDataManualEntryFragmentLabel">Pantalla de Entrada Manual de Datos Nfc Mrz</string>
+  <string name="misnapWorkflowNfcReaderFlowNfcMrz1LineManualEntryFragmentLabel">Pantalla de Entrada Manual para NFC MRZ de 1 línea</string>
+  <string name="misnapWorkflowNfcReaderFlowNfcReaderFragmentLabel">Pantalla del Lector NFC</string>
+
+  <string name="misnapWorkflowVoiceProcessorFlowHelpFragmentLabel">Ayuda</string>
+  <string name="misnapWorkflowVoiceProcessorFlowVoicePhraseSelectionFragmentLabel">Pantalla de Selección de Frase</string>
+  <string name="misnapWorkflowVoiceProcessorFlowVoiceProcessorFragmentLabel">Pantall de Analisis de Voz</string>
+  <!-- endregion -->
+
+  <!-- region REVIEW -->
+
+  <string name="misnapWorkflowReviewFragmentImageReviewMessage">¿Está satisfecho con su foto?</string>
+  <string name="misnapWorkflowReviewFragmentButtonConfirmLabel">Satisfecho</string>
+  <string name="misnapWorkflowReviewFragmentButtonRetakeLabel">Volver a tomar</string>
+
+  <!-- endregion -->
+
+  <!-- region FAILOVER -->
+
+  <string name="misnapWorkflowFailoverFragmentRetryMessage">¿Cómo quiere volver a intentarlo?</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentTimeoutMessage">Se acabó el tiempo, no pudimos tomar su documento…</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentFailureTipsMessage">Aquí hay algunos consejos</string>
+  <string name="misnapWorkflowFailoverFragmentButtonRetryAutoLabel">Automático</string>
+  <string name="misnapWorkflowFailoverFragmentButtonRetryManualLabel">Manual</string>
+
+
+  <string name="misnapWorkflowFailoverFragmentDocumentNotFoundReason">Centre el documento de manera que las 4 esquinas sean visibles</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentDefaultReason">Centre el documento de manera que las 4 esquinas sean visibles y siga las instrucciones en pantalla</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentMrzConfidenceReason">Centre el documento de manera que las 4 esquinas sean visibles</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentGlareReason">Evite reflejos de luz en el documento</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentBadAngleReason">Sostenga el dispositivo directamente sobre el documento</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentMaxBrightnessReason">Coloque el documento en una superficie con menos luz</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentMinPaddingReason">Aumente la distancia entre el documento y el dispositivo</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentMinBrightnessReason">Coloque el documento en una superficie bien iluminada</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentMinHorizontalFillReason">Reduzca la distancia entre el documento y el dispositivo</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentLowContrastReason">Centre el documento en una superficie con fondo oscuro</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentBusyBackgroundReason">Coloque el documento en una superficie con fondo despejado</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentWrongDocumentGenericReason">Centre el documento</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentWrongDocumentCheckFrontReason">Use el frente del cheque con todos los números visibles</string>
+  <string name="misnapWorkflowFailoverFragmentDocumentWrongDocumentCheckBackReason">Voltee el cheque para escanear la parte trasera</string>
+
+
+  <string name="misnapWorkflowFailoverFragmentFaceTimeoutMessage">Se acabó el tiempo, no pudimos tomar su foto…</string>
+  <string name="misnapWorkflowFailoverFragmentFaceFailureTipsMessage">Aquí hay algunos consejos</string>
+  <string name="misnapWorkflowFailoverFragmentFaceDefaultReason">Centre su rostro dentro del óvalo y siga las instrucciones en pantalla</string>
+  <string name="misnapWorkflowFailoverFragmentFaceNotFoundReason">Centre su rostro dentro del óvalo, evite el uso de gorras, lentes, bufandas, máscaras, etc.</string>
+  <string name="misnapWorkflowFailoverFragmentFaceEyesOpenReason">Mantenga sus ojos abiertos y visibles</string>
+  <string name="misnapWorkflowFailoverFragmentFaceMinPaddingReason">Aumente la distancia entre su rostro y el dispositivo</string>
+  <string name="misnapWorkflowFailoverFragmentFaceMinFillReason">Reduzca la distancia entre su rostro y el dispositivo</string>
+  <string name="misnapWorkflowFailoverFragmentFaceMultipleFacesReason">Asegúrese de que solo un rostro sea visible</string>
+  <string name="misnapWorkflowFailoverFragmentFaceBadAngleReason">Sostenga el dispositivo frente a usted y mantenga su rostro recto</string>
+
+
+  <string name="misnapWorkflowFailoverFragmentBarcodeDefaultReason">Centre el código de barras con todas las barras visibles</string>
+  <string name="misnapWorkflowFailoverFragmentBarcodeNotFoundReason">Centre el código de barras con todas las barras visibles y siga las instrucciones en pantalla</string>
+
+  <!-- endregion -->
+
+  <!-- region PERMISSIONS -->
+
+  <string name="misnapWorkflowCameraPermissionDocumentRationaleTitle">Motivo de Solicitud</string>
+  <string name="misnapWorkflowCameraPermissionDocumentRationaleMessage">Se necesita acceso a la cámara del dispositivo para tomar una foto de su documento</string>
+  <string name="misnapWorkflowCameraPermissionDocumentRationaleButtonConfirmLabel">OK</string>
+
+  <string name="misnapWorkflowCameraPermissionBarcodeRationaleTitle">Motivo de Solicitud</string>
+  <string name="misnapWorkflowCameraPermissionBarcodeRationaleMessage">Se necesita acceso a la cámara del dispositivo para tomar una foto de su código de barras</string>
+  <string name="misnapWorkflowCameraPermissionBarcodeRationaleButtonConfirmLabel">OK</string>
+
+  <string name="misnapWorkflowCameraPermissionFaceRationaleTitle">Motivo de Solicitud</string>
+  <string name="misnapWorkflowCameraPermissionFaceRationaleMessage">Se necesita acceso a la cámara del dispositivo para tomar una foto de su rostro</string>
+  <string name="misnapWorkflowCameraPermissionFaceRationaleButtonConfirmLabel">OK</string>
+
+  <string name="misnapWorkflowAudioPermissionVoiceRationaleTitle">Motivo de Solicitud</string>
+  <string name="misnapWorkflowAudioPermissionVoiceRationaleMessage">Se necesita acceso al micrófono del dispositivo para grabar su voz</string>
+  <string name="misnapWorkflowAudioPermissionVoiceRationaleButtonConfirmLabel">OK</string>
+  <!-- endregion -->
+
+  <!-- region ACCESSIBILITY   -->
+
+  <string name="misnapWorkflowFailoverFragmentDocumentAccessibilityMessage">Se acabó el tiempo, no pudimos tomar su documento. Aquí hay algunos consejos.</string>
+  <string name="misnapWorkflowFailoverFragmentFaceAccessibilityMessage">Se acabó el tiempo, no pudimos tomar su foto. Aquí hay algunos consejos.</string>
+
+  <string name="misnapWorkflowReviewFragmentAccessibilityMessage">¿Está satisfecho con su foto?</string>
+
+  <string name="misnapWorkflowHelpFragmentIdFrontAccessibilityDevicePortraitDocumentLandscapeAutoMessage">Sostenga la parte frontal de la identificación de manera horizontal y el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentIdFrontAccessibilityDevicePortraitDocumentPortraitAutoMessage">Sostenga la parte frontal de la identificación de manera vertical y el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentIdFrontAccessibilityDeviceLandscapeDocumentLandscapeAutoMessage">Sostenga la parte frontal de la identificación de manera horizontal y el dispositivo de manera horizontal, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentIdFrontAccessibilityDevicePortraitDocumentLandscapeManualMessage">Sostenga la parte frontal de la identificación de manera horizontal y el dispositivo de manera vertical, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentIdFrontAccessibilityDevicePortraitDocumentPortraitManualMessage">Sostenga la parte frontal de la identificación de manera vertical y el dispositivo de manera vertical, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentIdFrontAccessibilityDeviceLandscapeDocumentLandscapeManualMessage">Sostenga la parte frontal de la identificación de manera horizontal y el dispositivo de manera horizontal, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+
+  <string name="misnapWorkflowHelpFragmentIdBackAccessibilityDevicePortraitDocumentLandscapeAutoMessage">Sostenga la parte trasera de la identificación de manera horizontal y el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentIdBackAccessibilityDevicePortraitDocumentPortraitAutoMessage">Sostenga la parte trasera de la identificación de manera vertical y el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentIdBackAccessibilityDeviceLandscapeDocumentLandscapeAutoMessage">Sostenga la parte trasera de la identificación de manera horizontal y el dispositivo de manera horizontal, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentIdBackAccessibilityDevicePortraitDocumentLandscapeManualMessage">Sostenga la parte trasera de la identificación de manera horizontal y el dispositivo de manera vertical, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentIdBackAccessibilityDevicePortraitDocumentPortraitManualMessage">Sostenga la parte trasera de la identificación de manera vertical y el dispositivo de manera vertical, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentIdBackAccessibilityDeviceLandscapeDocumentLandscapeManualMessage">Sostenga la parte trasera de la identificación de manera horizontal y el dispositivo de manera horizontal, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+
+  <string name="misnapWorkflowHelpFragmentPassportAccessibilityDevicePortraitDocumentLandscapeAutoMessage">Sostenga la página de información del pasaporte de manera horizontal y el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentPassportAccessibilityDevicePortraitDocumentPortraitAutoMessage">Sostenga la página de información del pasaporte de manera vertical y el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentPassportAccessibilityDeviceLandscapeDocumentLandscapeAutoMessage">Sostenga la página de información del pasaporte de manera horizontal y el dispositivo de manera horizontal, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentPassportAccessibilityDevicePortraitDocumentLandscapeManualMessage">Sostenga la página de información del pasaporte de manera horizontal y el dispositivo de manera vertical, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentPassportAccessibilityDevicePortraitDocumentPortraitManualMessage">Sostenga la página de información del pasaporte de manera vertical y el dispositivo de manera vertical, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentPassportAccessibilityDeviceLandscapeDocumentLandscapeManualMessage">Sostenga la página de información del pasaporte de manera horizontal y el dispositivo de manera horizontal, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+
+  <string name="misnapWorkflowHelpFragmentCheckFrontAccessibilityDevicePortraitDocumentPortraitAutoMessage">Sostenga la parte frontal del cheque de manera vertical y el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentCheckFrontAccessibilityDeviceLandscapeDocumentLandscapeAutoMessage">Sostenga la parte frontal del cheque de manera horizontal y el dispositivo de manera horizontal, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentCheckFrontAccessibilityDevicePortraitDocumentPortraitManualMessage">Sostenga la parte frontal del cheque de manera vertical y el dispositivo de manera vertical, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentCheckFrontAccessibilityDeviceLandscapeDocumentLandscapeManualMessage">Sostenga la parte frontal del cheque de manera horizontal y el dispositivo de manera horizontal, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+
+  <string name="misnapWorkflowHelpFragmentCheckBackAccessibilityDevicePortraitDocumentPortraitAutoMessage">Sostenga la parte trasera del cheque de manera vertical y el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentCheckBackAccessibilityDeviceLandscapeDocumentLandscapeAutoMessage">Sostenga la parte trasera del cheque de manera horizontal y el dispositivo de manera horizontal, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentCheckBackAccessibilityDevicePortraitDocumentPortraitManualMessage">Sostenga la parte trasera del cheque de manera vertical y el dispositivo de manera vertical, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentCheckBackAccessibilityDeviceLandscapeDocumentLandscapeManualMessage">Sostenga la parte trasera del cheque de manera horizontal y el dispositivo de manera horizontal, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+
+  <string name="misnapWorkflowHelpFragmentBarcodeAccessibilityDevicePortraitDocumentLandscapeAutoMessage">Sostenga el código de barras de manera horizontal y el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentBarcodeAccessibilityDevicePortraitDocumentPortraitAutoMessage">Sostenga el código de barras de manera vertical y el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentBarcodeAccessibilityDeviceLandscapeDocumentLandscapeAutoMessage">Sostenga el código de barras de manera horizontal y el dispositivo de manera horizontal, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentBarcodeAccessibilityDevicePortraitDocumentLandscapeManualMessage">Sostenga el código de barras de manera horizontal y el dispositivo de manera vertical, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentBarcodeAccessibilityDevicePortraitDocumentPortraitManualMessage">Sostenga el código de barras de manera vertical y el dispositivo de manera vertical, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentBarcodeAccessibilityDeviceLandscapeDocumentLandscapeManualMessage">Sostenga el código de barras de manera horizontal y el dispositivo de manera horizontal, alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+
+  <string name="misnapWorkflowHelpFragmentNldBsnQrAccessibilityDevicePortraitDocumentLandscapeAutoMessage">Sostenga el reverso de la página de información del pasaporte de manera horizontal y alinee el código QR con el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentNldBsnQrAccessibilityDevicePortraitDocumentPortraitAutoMessage">Sostenga el reverso de la página de información del pasaporte de manera vertical y alinee el código QR con el dispositivo de manera vertical, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentNldBsnQrAccessibilityDeviceLandscapeDocumentLandscapeAutoMessage">Sostenga el reverso de la página de información del pasaporte de manera horizontal y alinee el código QR con el dispositivo de manera horizontal, manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentNldBsnQrAccessibilityDevicePortraitDocumentLandscapeManualMessage">Sostenga el reverso de la página de información del pasaporte de manera horizontal y alinee el código QR con el dispositivo de manera vertical, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentNldBsnQrAccessibilityDevicePortraitDocumentPortraitManualMessage">Sostenga el reverso de la página de información del pasaporte de manera vertical y alinee el código QR con el dispositivo de manera vertical, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+  <string name="misnapWorkflowHelpFragmentNldBsnQrAccessibilityDeviceLandscapeDocumentLandscapeManualMessage">Sostenga el reverso de la página de información del pasaporte de manera horizontal y alinee el código QR con el dispositivo de manera horizontal, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+
+  <string name="misnapWorkflowHelpFragmentGenericAccessibilityAutoMessage">Coloque el documento en una superficie bien iluminada con fondo oscuro. Manténgase firme, tomaremos la foto por usted.</string>
+  <string name="misnapWorkflowHelpFragmentGenericAccessibilityManualMessage">Coloque el documento en una superficie bien iluminada con fondo oscuro. Alinee el documento, manténgase firme y presione el botón de disparo cuando esté listo.</string>
+
+  <string name="misnapWorkflowHelpFragmentFaceAccessibilityAutoSmileMessage">Por favor: colóquese frente a un fondo uniforme, centre su rostro, sonría cuando esté listo. No oculte su cara con gorras, anteojos, bufandas, cabello… sin máscaras.</string>
+  <string name="misnapWorkflowHelpFragmentFaceAccessibilityAutoMessage">Por favor: colóquese frente a un fondo uniforme, centre su rostro, manténgase firme cuando esté listo. No oculte su cara con gorras, anteojos, bufandas, cabello… sin máscaras.</string>
+  <string name="misnapWorkflowHelpFragmentFaceAccessibilityManualMessage">Por favor: colóquese frente a un fondo uniforme, centre su rostro, presione el botón de disparo cuando esté listo. No oculte su cara con gorras, anteojos, bufandas, cabello… sin máscaras.</string>
+
+  <string name="misnapWorkflowDocumentAnalysisFragmentRecordingIconViewAccessibilityMessage">Indicador de Grabación de Video</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentTorchViewAccessibilityMessage">Control de Lámpara</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentButtonManualAccessibilityMessage">Tomar Foto</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentButtonHelpAccessibilityMessage">Ayuda</string>
+
+  <string name="misnapWorkflowHelpFragmentVoiceAccessibilityMessage">Por favor: Sostenga el dispositivo cerca de su boca. También grabe en un área silenciosa y no utilice dispositivos Bluetooth.</string>
+
+  <string name="misnapWorkflowBarcodeAnalysisFragmentRecordingIconViewAccessibilityMessage">Indicador de Grabación de Video</string>
+  <string name="misnapWorkflowBarcodeAnalysisFragmentTorchViewAccessibilityMessage">Control de Lámpara</string>
+  <string name="misnapWorkflowBarcodeAnalysisFragmentButtonManualAccessibilityMessage">Tomar Foto</string>
+  <string name="misnapWorkflowBarcodeAnalysisFragmentButtonHelpAccessibilityMessage">Ayuda</string>
+
+  <string name="misnapWorkflowFaceAnalysisFragmentRecordingIconViewAccessibilityMessage">Indicador de Grabación de Video</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentTorchViewAccessibilityMessage">Control de Lámpara</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentButtonManualAccessibilityMessage">Tomar Foto</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentButtonHelpAccessibilityMessage">Ayuda</string>
+  <!-- endregion   -->
+
+  <!-- region RECORDING VIEW -->
+
+  <string name="misnapWorkflowDocumentAnalysisFragmentRecordingIconViewLabel">Grabando</string>
+  <string name="misnapWorkflowBarcodeAnalysisFragmentRecordingIconViewLabel">Grabando</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentRecordingIconViewLabel">Grabando</string>
+
+  <!-- endregion -->
+
+  <!-- region SUCCESS VIEW -->
+
+  <string name="misnapWorkflowDocumentAnalysisFragmentSuccessViewLabel">Éxito!</string>
+  <string name="misnapWorkflowBarcodeAnalysisFragmentSuccessViewLabel">Éxito!</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentSuccessViewLabel">Éxito!</string>
+
+  <!-- endregion -->
+
+  <!-- region HINT VIEW -->
+
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewHoldStillMessage">Manténgase firme</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewReduceGlareMessage">Evite reflejos de luz</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewStraightenMessage">Enderece el documento</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewTooBrightMessage">Reduzca la luz</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewTooDarkMessage">Use una zona con mas luz</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewTooCloseMessage">Aleje el dispositivo</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewTooFarMessage">Acerque el dispositivo</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewUseDarkBackgroundMessage">Use un fondo oscuro</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewUsePlainBackgroundMessage">Use un fondo despejado</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewWrongDocumentMessage">De la vuelta al cheque</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewPressManualButtonMessage">Presione ahora</string>
+
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewHoldStillMessage">Manténgase firme</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewMultipleFacesMessage">Solo se permite un rostro</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewNotFoundMessage">Rostro no encontrado</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewOpenEyesMessage">Abra sus ojos</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewPressManualButtonMessage">Presione el botón de disparo ahora</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewSmileMessage">Sonría ahora</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewStopSmilingMessage">Pare de sonreir</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewStraightenMessage">Enderece su rostro</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewMoveFartherAwayMessage">Retírese</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewGetCloserMessage">Acérquese</string>
+
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewHoldStillAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewHoldStillMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewReduceGlareAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewReduceGlareMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewStraightenAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewStraightenMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewTooBrightAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewTooBrightMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewTooDarkAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewTooDarkMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewTooCloseAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewTooCloseMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewTooFarAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewTooFarMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewUseDarkBackgroundAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewUseDarkBackgroundMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewUsePlainBackgroundAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewUsePlainBackgroundMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewWrongDocumentAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewWrongDocumentMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewPressManualButtonAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewPressManualButtonMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewNotFoundAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewNotFoundMessage</string>
+  <string name="misnapWorkflowDocumentAnalysisFragmentHintViewMrzNotFoundAccessibilityMessage">@string/misnapWorkflowDocumentAnalysisFragmentHintViewMrzNotFoundMessage</string>
+
+  <string name="misnapWorkflowBarcodeAnalysisFragmentHintViewNotFoundAccessibilityMessage">@string/misnapWorkflowBarcodeAnalysisFragmentHintViewNotFoundMessage</string>
+
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewHoldStillAccessibilityMessage">@string/misnapWorkflowFaceAnalysisFragmentHintViewHoldStillMessage</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewMultipleFacesAccessibilityMessage">@string/misnapWorkflowFaceAnalysisFragmentHintViewMultipleFacesMessage</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewNotFoundAccessibilityMessage">@string/misnapWorkflowFaceAnalysisFragmentHintViewNotFoundMessage</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewOpenEyesAccessibilityMessage">@string/misnapWorkflowFaceAnalysisFragmentHintViewOpenEyesMessage</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewPressManualButtonAccessibilityMessage">@string/misnapWorkflowFaceAnalysisFragmentHintViewPressManualButtonMessage</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewSmileAccessibilityMessage">@string/misnapWorkflowFaceAnalysisFragmentHintViewSmileMessage</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewStopSmilingAccessibilityMessage">@string/misnapWorkflowFaceAnalysisFragmentHintViewStopSmilingMessage</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewStraightenAccessibilityMessage">@string/misnapWorkflowFaceAnalysisFragmentHintViewStraightenMessage</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewMoveFartherAwayAccessibilityMessage">@string/misnapWorkflowFaceAnalysisFragmentHintViewMoveFartherAwayMessage</string>
+  <string name="misnapWorkflowFaceAnalysisFragmentHintViewGetCloserAccessibilityMessage">@string/misnapWorkflowFaceAnalysisFragmentHintViewGetCloserMessage</string>
+
+  <!-- endregion -->
+
+  <!-- region COUNTDOWN TIMER VIEW -->
+
+  <string-array name="misnapWorkflowFaceAnalysisFragmentCountdownTimerViewLabels">
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+  </string-array>
+
+  <!-- endregion -->
+
+  <!-- region VIEW ACCESSIBILITY -->
+
+  <string name="misnapWorkflowTorchViewAccessibilityTorchOn">Lámpara Encendida</string>
+  <string name="misnapWorkflowTorchViewAccessibilityTorchOff">Lámpara Apagada</string>
+
+  <string name="misnapWorkflowRecordingIconViewAccessibilityStartedRecording">Se inició la grabación de video</string>
+  <string name="misnapWorkflowRecordingIconViewAccessibilityStoppedRecording">Se detuvo la grabación de video</string>
+
+  <!-- endregion -->
+
+  <!-- region NFC Read Fragment -->
+
+  <string name="misnapWorkflowNfcEnablePopupTitle">Por favor active el NFC en su dispositivo</string>
+  <string name="misnapWorkflowNfcEnablePopupMessage">Usaremos NFC para verificar los datos almacenados en el chip de su documento.\nPor favor active el NFC en la configuración y luego presione atrás para continuar.</string>
+  <string name="misnapWorkflowNfcEnablePopupSettingsLabel">Configuración</string>
+  <string name="misnapWorkflowNfcEnablePopupCancelLabel">Cancelar</string>
+
+  <string name="misnapWorkflowNfcReaderFragmentButtonRetryLabel">Reintentar</string>
+  <string name="misnapWorkflowNfcReaderFragmentButtonHelpLabel">Necesito Ayuda</string>
+  <string name="misnapWorkflowNfcReaderFragmentButtonSkipLabel">Saltar</string>
+  <string name="misnapWorkflowNfcReaderFragmentHelpPopupMessage">
+        <ul>
+            \n<li>Mueva su dispositivo lentamente sobre el documento hasta que su dispositivo vibre</li>
+            \n\n<li>Una vez que su dispositivo vibre, sostenga el dispositivo y el documento firmemente hasta que la lectura termine</li>
+            \n\n<li>Si tiene una carcasa protectora en su dispositivo, retírela e intente de nuevo</li>
+        </ul>
+    </string>
+  <string name="misnapWorkflowNfcReaderFragmentHelpPopupButtonOkayLabel">Lo tengo</string>
+
+  <string name="misnapWorkflowNfcReaderFragmentFailoverPopupMessage">¿Quiere leer las instrucciones de ayuda en lugar de saltarse la lectura NFC?</string>
+  <string name="misnapWorkflowNfcReaderFragmentFailoverPopupButtonRetryLabel">Reintentar</string>
+  <string name="misnapWorkflowNfcReaderFragmentFailoverPopupButtonHelpLabel">Necesito Ayuda</string>
+  <string name="misnapWorkflowNfcReaderFragmentFailoverPopupButtonSkipLabel">Saltar</string>
+
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsIdDeviceTopMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la tarjeta de identificación hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsIdDeviceMiddleMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la tarjeta de identificación hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsIdDeviceBottomMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la tarjeta de identificación hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsIdDeviceUnknownMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la tarjeta de identificación hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsDlDeviceTopMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la licencia de conducir hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsDlDeviceMiddleMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la licencia de conducir hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsDlDeviceBottomMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la licencia de conducir hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsDlDeviceUnknownMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la licencia de conducir hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+
+
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsPassportBackDeviceTopMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la página opuesta a la página de datos personales del pasaporte hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsPassportBackDeviceMiddleMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la página opuesta a la página de datos personales del pasaporte hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsPassportBackDeviceBottomMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la página opuesta a la página de datos personales del pasaporte hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsPassportBackDeviceUnknownMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la página opuesta a la página de datos personales del pasaporte hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+
+
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsPassportFrontDeviceTopMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la página de datos personales del pasaporte hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsPassportFrontDeviceMiddleMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la página de datos personales del pasaporte hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsPassportFrontDeviceBottomMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la página de datos personales del pasaporte hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsPassportFrontDeviceUnknownMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través de la página de datos personales del pasaporte hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+
+  <string name="misnapWorkflowNfcReaderFragmentSearchInstructionsPassportUnknownMessage">Deslice su dispositivo &lt;b>lentamente&lt;/b> a través del pasaporte hasta que el dispositivo vibre, luego &lt;b>manténgase firme&lt;/b></string>
+
+  <string name="misnapWorkflowNfcReaderFragmentChipFoundMessage">Leyendo datos. &lt;b>Manténgase firme&lt;/b></string>
+  <string name="misnapWorkflowNfcReaderFragmentReadFailedMessage">Lectura interrumpida. Intente de nuevo y &lt;b>mantenga el dispositivo firme&lt;/b> una vez que vibre</string>
+  <string name="misnapWorkflowNfcReaderFragmentReadCompleteMessage">Lectura completa</string>
+
+  <!-- endregion -->
+
+  <!-- region NFC Manual Entry Fragment -->
+
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentTitle">Por favor llene la siguiente información</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentVerifyTitle">Por favor verifique la siguiente información</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentDocumentNumberLabel">Número de documento</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentDobLabel">Fecha de nacimiento</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentDoeLabel">Fecha de expiración</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentIssuingCountryLabel">País emisor</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentDocumentCodeLabel">Código del documento</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentButtonSubmitLabel">Siguiente</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentErrorEmptyField">Este campo no puede estar vacío</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentErrorDocumentNumberLengthIncorrect">El número de documento solo puede tener 8 o 12 caracteres de longitud</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentErrorDocumentNumberInvalid">El número de documento solo puede tener caracteres alfanuméricos</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentErrorDobIsInFuture">La fecha de nacimiento no puede estar en el futuro</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentErrorDoeIsNotAfterDob">La fecha de expiración debe de estar después de la fecha de nacimiento</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentErrorIssuingCountryLengthIncorrect">El país emisor solo puede tener hasta 3 caracteres de longitud</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentErrorIssuingCountryInvalid">El país emisor solo puede contener caracteres alfanuméricos y \'&lt;\'</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentErrorDocumentCodeLengthIncorrect">El código del documento solo puede tener hasta 2 caracteres de longitud</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentErrorDocumentCodeInvalid">El código del documento solo puede contener caracteres alfanuméricos y \'&lt;\'</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentButtonHelpLabel">Necesito Ayuda</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentButtonSkipLabel">Saltar</string>
+
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentTitle">Por favor llene la siguiente información</string>
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentVerifyTitle">Por favor verifique la siguiente información</string>
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentButtonHelpLabel">Necesito Ayuda</string>
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentButtonSkipLabel">Saltar</string>
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentButtonSubmitLabel">Siguiente</string>
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentErrorEmptyField">Este campo no puede estar vacío</string>
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentMrzStringLabel">MRZ</string>
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentErrorMrzStringLengthIncorrect">El MRZ solo puede tener 30 caracteres de longitud</string>
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentErrorMrzStringInvalid">El MRZ solo puede contener catacteres alfanuméricos y \'&lt;\'</string>
+
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentHelpDescriptionPassports">Pantalla de ayuda para entrada manual de información de pasaporte</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentHelpDescriptionIds">Pantalla de ayuda para entrada manual de información de tarjeta de identificación</string>
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentHelpDescriptionDls">Pantalla de ayuda para entrada manual de información de licencia de conducir</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentHelpDocumentNumber">Número de documento</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentHelpDob">Fecha de nacimiento</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentHelpDoe">Fecha de expiración</string>
+  <string name="misnapWorkflowNfcMrz1LineManualEntryFragmentHelpMrz">MRZ</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentHelpIssuingCountry">País emisor</string>
+  <string name="misnapWorkflowNfcMrzDataManualEntryFragmentHelpDocumentType">Tipo de documento</string>
+
+  <!-- endregion -->
+
+  <!-- region NFC Selection Fragment -->
+
+  <string name="misnapWorkflowNfcSelectionFragmentButtonIdLabel">Tarjeta de Identificación</string>
+  <string name="misnapWorkflowNfcSelectionFragmentButtonDlLabel">Licencia de Conducir</string>
+  <string name="misnapWorkflowNfcSelectionFragmentButtonPassportLabel">Pasaporte</string>
+  <string name="misnapWorkflowNfcSelectionFragmentButtonSkipLabel">Saltar</string>
+
+  <!-- endregion -->
+
+  <!-- region ANALYSIS -->
+  <string name="misnapWorkflowAnalysisManualTriggerProgressIndicatorLabel">Por favor espere</string>
+  <!-- endregion -->
+
+  <!-- region Voice Phrase Selection -->
+
+  <string name="misnapWorkflowVoicePhraseSelectionFragmentTitle">Elija una frase clave</string>
+
+  <string name="misnapWorkflowVoiceProcessorFragmentFailoverPopupButtonRetryLabel">Reintentar</string>
+  <string name="misnapWorkflowVoiceProcessorFragmentFailoverPopupButtonHelpLabel">Necesito Ayuda</string>
+  <string name="misnapWorkflowVoiceProcessorFragmentFailoverPopupButtonSkipLabel">Saltar</string>
+  <string name="misnapWorkflowVoiceProcessorFragmentFailoverPopupMessageAboutSpeechLength">Lo sentimos, pero la grabación de voz no es suficiente para el análisis. No haga pausas largas entre palabras pero tampoco hable muy rápido.</string>
+  <string name="misnapWorkflowVoiceProcessorFragmentFailoverPopupMessageAboutSnr">El audio tiene demasiado ruido de fondo. Por favor grabe en una ubicación mas silenciosa.</string>
+  <string name="misnapWorkflowVoiceProcessorFragmentFailoverPopupMessageTimeout">Se acabó el tiempo, no pudimos procesar su voz</string>
+  <string name="misnapWorkflowVoiceProcessorFragmentFailoverPopupMessageBackgroundAudioTimeout">Por favor detenga la reproducción de audio en el dispositivo e intente de nuevo.</string>
+
+  <string name="misnapWorkflowVoiceProcessorFragmentHelpPopupButtonOkayLabel">Reintentar</string>
+
+  <string-array name="misnapWorkflowVoicePhraseSelectionFragmentPhrases">
+    <item>Hay que hacer bien sin mirar a quién</item>
+    <item>Quien vive con compañía vive con alegría</item>
+    <item>Si puedes soñarlo puedes hacerlo</item>
+    <item>Poco a poco se anda lejos</item>
+    <item>Nunca es tarde si la dicha es buena</item>
+  </string-array>
+  <!-- endregion -->
+
+  <string name="misnapWorkflowVoiceProcessorFragmentInstructionLabel">Por favor repita la frase</string>
+</resources>
