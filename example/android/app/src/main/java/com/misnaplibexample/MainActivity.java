@@ -114,4 +114,3 @@ protected void onCreate(Bundle savedInstanceState) {
     AppCompatDelegate.setApplicationLocales(newLocale);
   }
 }
-

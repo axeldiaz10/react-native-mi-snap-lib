@@ -7,6 +7,8 @@ RCT_EXTERN_METHOD(openCamera:(NSString)type withLicense:(NSString)license
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 
+RCT_EXTERN_METHOD(setLanguage:(NSString)language)
+
 + (BOOL)requiresMainQueueSetup
 {
   return YES;

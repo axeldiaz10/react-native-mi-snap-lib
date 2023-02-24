@@ -17,6 +17,10 @@ const MiSnapLib = NativeModules.MiSnapLib
       }
     );
 
+export function setLanguage(language: string) {
+  return MiSnapLib.setLanguage(language)
+}
+
 export function openCamera(type: string, license: string, language: string): Promise<string> {
   return MiSnapLib.openCamera(type, license, language);
 }

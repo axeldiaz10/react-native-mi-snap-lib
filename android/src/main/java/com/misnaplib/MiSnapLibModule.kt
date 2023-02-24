@@ -30,7 +30,7 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
   }
 
   @ReactMethod
-  fun setupLanguage(language: String) {
+  fun setLanguage(language: String) {
     val currentActivityListener = (currentActivity as MainActivityResult)
     currentActivityListener.setupLocale(language) {}
   }

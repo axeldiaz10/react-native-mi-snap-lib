@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text, Button, TextInput } from 'react-native';
-import { openCamera } from 'react-native-mi-snap-lib';
+import { openCamera, setLanguage } from 'react-native-mi-snap-lib';
 
 export default function App() {
   const [result, setResult] = React.useState<[string] | undefined>();
@@ -30,10 +30,20 @@ export default function App() {
     }
   };
 
+  const handleLanguage = async () => {
+    console.log('handleLanguage');
+    try {
+      setLanguage(text)
+    } catch (e) {
+      handleError(e);
+    }
+  };
+
   return (
     <View style={styles.container}>
       <Text>Result: {result}</Text>
-        <Button onPress={handlePress} title="Calendar Test"></Button>
+      <Button onPress={handlePress} title="Open Camera"></Button>
+      <Button onPress={handleLanguage} title="Set Language"></Button>
         <TextInput
         style={styles.input}
         onChangeText={onChangeText}

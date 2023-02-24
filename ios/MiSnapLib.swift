@@ -12,6 +12,9 @@ class MiSnapLib: NSObject {
     var rejecter: RCTPromiseRejectBlock? = nil
     weak var viewController: MiSnapViewController? = nil
 
+    @objc(setLanguage:)
+    func setLanguage(language: String) {}
+
     @objc(openCamera:withLicense:withLanguage:withResolver:withRejecter:)
     func openCamera(for type: String,
                     withLicense: String,
