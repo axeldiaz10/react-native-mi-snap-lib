@@ -1,4 +1,4 @@
-package com.misnaplibexample;
+package net.viacash.myvia;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

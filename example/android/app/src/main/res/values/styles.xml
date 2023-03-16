@@ -1,9 +1,18 @@
 <resources>
+  <style name="MyViaTheme" parent="MiSnapTheme">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorOnPrimary">@color/colorOnPrimary</item>
+    <item name="colorSecondary">@color/colorSecondary</item>
+    <item name="colorOnSecondary">@color/colorOnSecondary</item>
+    <item name="colorSurface">@color/colorSurface</item>
+    <item name="colorOnSurface">@color/colorOnSurface</item>
+    <item name="android:colorBackground">@color/colorBackground</item>
+    <item name="colorOnBackground">@color/white</item>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
-    </style>
-
+    <item name="android:buttonStyle">@style/MiSnapTheme.Button</item>
+    <item name="materialButtonStyle">@style/MiSnapTheme.Button</item>
+    <item name="materialButtonOutlinedStyle">@style/MiSnapTheme.Button.Outlined</item>
+    <item name="borderlessButtonStyle">@style/MiSnapTheme.Button.Borderless</item>
+    <item name="android:alertDialogStyle">@style/MiSnapTheme.Dialog</item>
+  </style>
 </resources>

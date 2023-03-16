@@ -1,14 +1,8 @@
-package com.misnaplibexample;
+package net.viacash.myvia;
 
-import static java.sql.DriverManager.println;
-
-import android.app.LocaleManager;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.LocaleList;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -22,7 +16,6 @@ import com.misnaplib.MainActivityResult;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Locale;
 import java.util.concurrent.Callable;
 
 import kotlin.Unit;
