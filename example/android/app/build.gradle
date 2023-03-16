@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.misnaplibexample"
+    namespace "net.viacash.myvia"
     defaultConfig {
-        applicationId "com.misnaplibexample"
+        applicationId "net.viacash.myvia"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

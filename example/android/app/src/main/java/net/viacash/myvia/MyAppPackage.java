@@ -1,4 +1,4 @@
-package com.misnaplibexample;
+package net.viacash.myvia;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;

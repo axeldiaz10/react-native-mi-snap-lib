@@ -1,15 +1,8 @@
-package com.misnaplibexample;
+package net.viacash.myvia;
 
-import android.app.Activity;
-import android.app.LocaleManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.content.res.Resources;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.DisplayMetrics;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -25,7 +18,6 @@ import com.zeugmasolutions.localehelper.LocaleHelperApplicationDelegate;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Locale;
 import java.util.concurrent.Callable;
 
 import kotlin.Unit;
