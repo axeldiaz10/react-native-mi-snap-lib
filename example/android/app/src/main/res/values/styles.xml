@@ -11,6 +11,7 @@
     <item name="colorOnPrimary">#000000</item>
     <item name="colorSecondary">#f06292</item>
     <item name="colorOnSecondary">#000000</item>
+    <item name="android:fontFamily">@font/roboto_bold</item>
   </style>
 
 </resources>
