@@ -6,4 +6,11 @@
         <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
     </style>
 
+  <style name="YellowTheme" parent="MiSnapTheme">
+    <item name="colorPrimary">#FF69B4</item>
+    <item name="colorOnPrimary">#000000</item>
+    <item name="colorSecondary">#f06292</item>
+    <item name="colorOnSecondary">#000000</item>
+  </style>
+
 </resources>

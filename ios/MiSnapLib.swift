@@ -6,6 +6,12 @@ import MiSnapUX
 import UIKit
 import Foundation
 
+fileprivate extension UIColor {
+    static let miSnapBackgroundColor = UIColor(red: 41/255.0, green: 45/255.0, blue: 50/255.0, alpha: 1)
+    static let miSnapAccentColor = UIColor(red: 241/255.0, green: 101/255.0, blue: 34/255.0, alpha: 1)
+    static let miSnapGrayButton = UIColor(red: 172/255.0, green: 73/255.0, blue: 25/255.0, alpha: 1)
+}
+
 @objc(MiSnapLib)
 class MiSnapLib: NSObject {
     var resolver: RCTPromiseResolveBlock? = nil
@@ -34,12 +40,37 @@ class MiSnapLib: NSObject {
                     localization.bundle = Bundle.main
                     localization.stringsName = self.parseLanguage(from: withLanguage)
                 })
+                .withCustomTutorial { tutorial in
+                    tutorial.backgroundColor = .miSnapBackgroundColor
+                    tutorial.instruction.bullet.type = .arrow
+                    tutorial.instruction.bullet.fillColor = .white
+                    
+                    tutorial.instruction.message.color = .white
+                    tutorial.instruction.messageSecondary.color = .white
+                    
+                    tutorial.instruction.message.font = self.boldFont(size: 26)
+                    tutorial.instruction.messageSecondary.font = self.boldFont(size: 26)
+
+                    tutorial.buttons.barColor = .miSnapAccentColor
+
+                    tutorial.buttons.retry.font = self.boldFont(size: 18)
+                    tutorial.buttons.cancel.font = self.boldFont(size: 18)
+                    tutorial.buttons.proceed.font = self.boldFont(size: 18)
+
+                    tutorial.buttons.cancel.color = .black
+                    tutorial.buttons.retry.color = .white
+                    tutorial.buttons.proceed.color = .black
+                }
 
             let misnapVC = MiSnapViewController(with: configuration, delegate: self)
             self.viewController = misnapVC
 
             self.presentMiSnap(misnapVC)
         }
+    }
+
+    private func boldFont(size: CGFloat) -> UIFont {
+        UIFont.init(name: "Roboto-Bold.ttf", size: size) ?? UIFont.boldSystemFont(ofSize: size)
     }
 
     private func parseLanguage(from string: String) -> String {
@@ -66,10 +97,10 @@ extension MiSnapLib: MiSnapViewControllerDelegate {
     }
 
     func miSnapSuccess(_ result: MiSnapResult) {
-        resolver?(result.encodedImage)
-        self.viewController?.dismiss(animated: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.viewController?.dismiss(animated: true)
+            self.viewController?.dismiss(animated: true) {
+                self.resolver?(result.encodedImage)
+            }
         }
     }
 
@@ -189,6 +220,34 @@ extension MiSnapLib {
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
             return UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(named).path)
         }
+        return nil
+    }
+}
+
+extension UIColor {
+    public convenience init?(hex: String) {
+        let r, g, b, a: CGFloat
+
+        if hex.hasPrefix("#") {
+            let start = hex.index(hex.startIndex, offsetBy: 1)
+            let hexColor = String(hex[start...])
+
+            if hexColor.count == 8 {
+                let scanner = Scanner(string: hexColor)
+                var hexNumber: UInt64 = 0
+
+                if scanner.scanHexInt64(&hexNumber) {
+                    r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
+                    g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
+                    b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
+                    a = CGFloat(hexNumber & 0x000000ff) / 255
+
+                    self.init(red: r, green: g, blue: b, alpha: a)
+                    return
+                }
+            }
+        }
+
         return nil
     }
 }

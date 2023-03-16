@@ -30,6 +30,7 @@
 		C78B158929886B8000527C66 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = C78B158729886B8000527C66 /* RCTCalendarModule.m */; };
 		FA0606F229A444B30031CF18 /* LocalizableES.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA0606F429A444B30031CF18 /* LocalizableES.strings */; };
 		FA0606F629A445010031CF18 /* LocalizableEN.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA0606F829A445010031CF18 /* LocalizableEN.strings */; };
+		FA8F29A429C3CA2F002CD5CC /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA8F29A329C3CA2F002CD5CC /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		FA0606F529A444BD0031CF18 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LocalizableES.strings; sourceTree = "<group>"; };
 		FA0606F729A445010031CF18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableEN.strings; sourceTree = "<group>"; };
 		FA0606F929A445080031CF18 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LocalizableEN.strings; sourceTree = "<group>"; };
+		FA8F29A329C3CA2F002CD5CC /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		61F26FC9299332B100AEC66A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				FA8F29A229C3CA1A002CD5CC /* Fonts */,
 				61F26FDD299332DB00AEC66A /* misnap_tutorial_id_back_portrait_2.jpg */,
 				61F26FD8299332DB00AEC66A /* misnap_tutorial_id_back_portrait.jpg */,
 				61F26FD7299332DB00AEC66A /* misnap_tutorial_id_back.jpg */,
@@ -204,6 +207,14 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-MiSnapLibExample-MiSnapLibExampleTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA8F29A229C3CA1A002CD5CC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA8F29A329C3CA2F002CD5CC /* Roboto-Bold.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 				61F26FE5299332DB00AEC66A /* misnap_tutorial_passport.jpg in Resources */,
 				61F26FE6299332DB00AEC66A /* misnap_tutorial_passport_portrait.jpg in Resources */,
 				61F26FE3299332DB00AEC66A /* misnap_tutorial_passport_qr_portrait_2.jpg in Resources */,
+				FA8F29A429C3CA2F002CD5CC /* Roboto-Bold.ttf in Resources */,
 				61F26FE2299332DB00AEC66A /* misnap_tutorial_id_portrait.jpg in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				61F26FE4299332DB00AEC66A /* misnap_tutorial_id_portrait_2.jpg in Resources */,

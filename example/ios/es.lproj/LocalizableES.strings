@@ -5,7 +5,7 @@
  Copyright (c) 2014 Mitek Systems, Inc. All rights reserved.
  */
 
-// Titles
+  // Titles
 "Any ID"                                = "Cualquier documento de identidad";
 "Passport"                              = "Pasaporte";
 "ID Front"                              = "Anverso de la identificación";
@@ -31,10 +31,10 @@
 
 "help_failover_check"                   = "Centre el cheque con las 4 esquinas visibles y presione el botón Snap Photo (tomar foto) cuando esté listo";
 "help_failover_document"                = "Centre el documento con las 4 esquinas visibles y presione el botón Snap Photo (tomar foto) cuando esté listo";
-"help_check"                            = "Trate de colocar el cheque en una superficie oscura, bien iluminada y no lo mueva, le tomaremos la foto";
-"help_document"                         = "Trate de colocar el documento en una superficie oscura, bien iluminada y no lo mueva, le tomaremos la foto";
-"help_manual_check"                     = "Coloque el cheque en una superficie oscura, bien iluminada con las 4 esquinas visibles, presione el botón Snap Photo (tomar foto) cuando esté listo";
-"help_manual_document"                  = "Coloque el documento en una superficie oscura, bien iluminada con las 4 esquinas visibles, presione el botón Snap Photo (tomar foto) cuando esté listo";
+"help_check"                            = "Trate de colocar el cheque en una superficie oscura,\n bien iluminada y no lo mueva, le tomaremos la foto";
+"help_document"                         = "Trate de colocar el documento en una superficie oscura,\n bien iluminada y no lo mueva, le tomaremos la foto";
+"help_manual_check"                     = "Coloque el cheque en una superficie oscura,\n bien iluminada con las 4 esquinas visibles, presione el botón Snap Photo (tomar foto) cuando esté listo";
+"help_manual_document"                  = "Coloque el documento en una superficie oscura,\n bien iluminada con las 4 esquinas visibles, presione el botón Snap Photo (tomar foto) cuando esté listo";
 
 "help_seamless_failover"                = "No pudimos capturar la imagen automáticamente. Alinee con la guía y tome una foto manualmente";
 
@@ -71,19 +71,19 @@
 
 "misnap_tutorial_do_not_show_again"     = "No use esta misma pantalla de nuevo";
 
-// Navigation buttons
+  // Navigation buttons
 "misnap_tutorial_cancel"                = "Cancelar";
 "misnap_tutorial_back"                  = "Volver";
 "misnap_tutorial_continue"              = "Continuar";
-"misnap_tutorial_try_again"             = "Reintentar Captura Automática";
-"misnap_tutorial_capture_manually"      = "Capturar Manualmente";
+"misnap_tutorial_try_again"             = "Reintentar Captura\n Automática";
+"misnap_tutorial_capture_manually"      = "Capturar\n Manualmente";
 "misnap_tutorial_retake"                = "Volver A Tomar";
 "misnap_tutorial_continue_review"       = "Se Ve Bien";
 
-"misnap_tutorial_check"                 = "Coloque el cheque sobre una superficie oscura, bien iluminada. Alinear el cheque.";
-"misnap_tutorial_id"                    = "Coloque la licensia sobre una superficie oscura, bien iluminada. Alinear la licensia.";
-"misnap_tutorial_passport"              = "Coloque el pasaporte sobre una superficie oscura, bien iluminada. Alinear el pasaporte";
-"misnap_tutorial_document"              = "Coloque el documento sobre una superficie oscura, bien iluminada. Alinear el documento";
+"misnap_tutorial_check"                 = "Coloque el cheque sobre una superficie oscura,\n bien iluminada. Alinear el cheque.";
+"misnap_tutorial_id"                    = "Coloque la licensia sobre una superficie oscura,\n bien iluminada. Alinear la licensia.";
+"misnap_tutorial_passport"              = "Coloque el pasaporte sobre una superficie oscura,\n bien iluminada. Alinear el pasaporte";
+"misnap_tutorial_document"              = "Coloque el documento sobre una superficie oscura,\n bien iluminada. Alinear el documento";
 
 "misnap_tutorial_auto"                  = "Captaremos la foto por usted.";
 "misnap_tutorial_manual"                = "Presione el boton Snap Photo (tomar foto) cuando esté listo.";
@@ -120,7 +120,7 @@
 "misnap_status_not_identity_front_timeout"   = "Utilice el frente de un documento de identidad válido";
 "misnap_status_not_identity_back_timeout"    = "Utilice el reverso de un documento de identidad válido";
 "misnap_status_not_passport_timeout"         = "Usar la página de biografía del pasaporte";
-"misnap_status_not_check_front_timeout"      = "Utilice el frente del cheque con todos los números visibles";
+"misnap_status_not_check_front_timeout"      = "Utilice el frente del cheque con todos\n los números visibles";
 "misnap_status_not_check_back_timeout"       = "Dale la vuelta al cheque para capturar el reverso ";
 "misnap_status_too_skewed_timeout"           = "Sujeta el dispositivo directamente sobre el documento";
 "misnap_status_too_rotated_timeout"          = "Sujeta el dispositivo directamente sobre el documento";

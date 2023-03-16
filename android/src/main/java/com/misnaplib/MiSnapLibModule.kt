@@ -1,5 +1,8 @@
 package com.misnaplib
 
+import android.app.Activity
+import android.os.Build
+import android.os.Bundle
 import android.util.Base64
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactApplicationContext
@@ -12,6 +15,9 @@ import com.miteksystems.misnap.workflow.MiSnapFinalResult
 import com.miteksystems.misnap.workflow.MiSnapWorkflowActivity
 import com.miteksystems.misnap.workflow.MiSnapWorkflowError
 import com.miteksystems.misnap.workflow.MiSnapWorkflowStep
+import com.miteksystems.misnap.workflow.fragment.DocumentAnalysisFragment
+import com.miteksystems.misnap.workflow.fragment.HelpFragment
+import java.util.Locale
 import java.util.concurrent.Callable
 
 interface MainActivityResult {
@@ -45,10 +51,35 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
       if (type == "back")
         useCase = MiSnapSettings.UseCase.CHECK_BACK
 
+      val helpFragmentWorkflowSettings =
+        HelpFragment.buildWorkflowSettings(
+          showSkipCheckBox = false
+        )
+      val documentAnalysisFragmentWorkflowSettings =
+        DocumentAnalysisFragment.buildWorkflowSettings(
+          timeoutDuration = 15_000,
+          manualButtonDrawableId = android.R.drawable.ic_menu_camera,
+          guideViewShowVignette = true,
+          hintViewShouldShowBackground = true,
+          successViewShouldVibrate = true,
+          reviewCondition = DocumentAnalysisFragment.ReviewCondition.ALWAYS
+        )
+
+      (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowHelpFragmentLabel)
+
       val settings = MiSnapSettings(
         useCase = useCase,
         license = license
-      )
+      ).apply {
+        workflow.add(
+          (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowHelpFragmentLabel),
+          helpFragmentWorkflowSettings
+        )
+        workflow.add(
+          (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowDocumentAnalysisFragmentLabel),
+          documentAnalysisFragmentWorkflowSettings
+        )
+      }
 
       settings.camera.apply {
         profile = MiSnapSettings.Camera.Profile.DOCUMENT_BACK_CAMERA
@@ -124,12 +155,12 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
       }
 
       MiSnapWorkflowActivity.Result.clearResults()
+
       null
     }
     println("MYSNAP Launching activity ")
     super.getCurrentActivity()?.startActivityForResult(intent, 123)
     println("MYSNAP launched activity ")
-
   }
 
   private fun hasCameraSettings(settings: MiSnapSettings) =
@@ -165,3 +196,4 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
     const val NAME = "MiSnapLib"
   }
 }
+

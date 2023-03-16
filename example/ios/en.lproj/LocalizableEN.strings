@@ -27,10 +27,10 @@
 "help_failover_passport"                = "Center the passport with all four corners visible and press the snap photo button when ready.";
 "help_failover_check"                   = "Center the check on a dark, well lit surface with all four corners visible and press the snap photo button when ready.";
 "help_failover_document"                = "Center the document with all four corners visible and press the snap photo button when ready.";
-"help_check"                            = "Try placing the check on a dark, well lit surface and hold still, we will take the photo for you.";
-"help_document"                         = "Try placing the document on a dark, well lit surface and hold still, we will take the photo for you.";
-"help_manual_check"                     = "Place the check on a dark, well lit surface with all four corners visible, press the snap photo button when ready";
-"help_manual_document"                  = "Place the document on a dark well lit surface with all four corners visible, press the snap photo button when ready";
+"help_check"                            = "Try placing the check on a dark,\n well lit surface and hold still, we will take the photo for you.";
+"help_document"                         = "Try placing the document on a dark,\n well lit surface and hold still, we will take the photo for you.";
+"help_manual_check"                     = "Place the check on a dark,\n well lit surface with all four corners visible, press the snap photo button when ready";
+"help_manual_document"                  = "Place the document on a dark,\n well lit surface with all four corners visible, press the snap photo button when ready";
 
 "help_seamless_failover"                = "We were unable to automatically capture the image. Please align to the guide and snap a photo manually";
 
@@ -72,14 +72,14 @@
 "misnap_tutorial_back"                  = "Back";
 "misnap_tutorial_continue"              = "Continue";
 "misnap_tutorial_try_again"             = "Retry Autocapture";
-"misnap_tutorial_capture_manually"      = "Capture Manually";
+"misnap_tutorial_capture_manually"      = "Capture\n Manually";
 "misnap_tutorial_retake"                = "Retake";
 "misnap_tutorial_continue_review"       = "Looks Good";
 
-"misnap_tutorial_check"                 = "Center the check on a dark surface, provide ample light. Align check.";
-"misnap_tutorial_id"                    = "Center the license on a dark surface, provide ample light. Align license.";
-"misnap_tutorial_passport"              = "Center the passport on a dark surface, provide ample light. Align passport.";
-"misnap_tutorial_document"              = "Center the document on a dark surface, provide ample light. Align document.";
+"misnap_tutorial_check"                 = "Center the check on a dark surface,\n provide ample light. Align check.";
+"misnap_tutorial_id"                    = "Center the license on a dark surface,\n provide ample light. Align license.";
+"misnap_tutorial_passport"              = "Center the passport on a dark surface,\n provide ample light. Align passport.";
+"misnap_tutorial_document"              = "Center the document on a dark surface,\n provide ample light. Align document.";
 
 "misnap_tutorial_auto"                  = "We will take the photo for you.";
 "misnap_tutorial_manual"                = "Tap the capture button when ready.";
@@ -116,7 +116,7 @@
 "misnap_status_not_identity_front_timeout"   = "Use front of valid identity document";
 "misnap_status_not_identity_back_timeout"    = "Use back of valid identity document";
 "misnap_status_not_passport_timeout"         = "Use passport bio page";
-"misnap_status_not_check_front_timeout"      = "Use front of the check with all numbers visible";
+"misnap_status_not_check_front_timeout"      = "Use front of the check\n with all numbers visible";
 "misnap_status_not_check_back_timeout"       = "Flip the check to scan the back";
 "misnap_status_too_skewed_timeout"           = "Hold the device directly over the document";
 "misnap_status_too_rotated_timeout"          = "Hold the device directly over the document";
