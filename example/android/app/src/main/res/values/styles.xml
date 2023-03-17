@@ -1,18 +1,49 @@
 <resources>
-  <style name="MyViaTheme" parent="MiSnapTheme">
+  <style name="MyViaTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
     <item name="colorPrimary">@color/colorPrimary</item>
     <item name="colorOnPrimary">@color/colorOnPrimary</item>
     <item name="colorSecondary">@color/colorSecondary</item>
     <item name="colorOnSecondary">@color/colorOnSecondary</item>
     <item name="colorSurface">@color/colorSurface</item>
-    <item name="colorOnSurface">@color/colorOnSurface</item>
+    <item name="colorOnSurface">@color/white</item>
     <item name="android:colorBackground">@color/colorBackground</item>
     <item name="colorOnBackground">@color/white</item>
+    <item name="android:textColor">#ffffffff</item>
+    <item name="android:colorForeground">@color/white</item>
+    <item name="android:textColorSecondary">@color/white</item>
 
-    <item name="android:buttonStyle">@style/MiSnapTheme.Button</item>
-    <item name="materialButtonStyle">@style/MiSnapTheme.Button</item>
+    <item name="android:buttonStyle">@style/MyViaTheme.Button</item>
+    <item name="materialButtonStyle">@style/MyViaTheme.Button</item>
     <item name="materialButtonOutlinedStyle">@style/MiSnapTheme.Button.Outlined</item>
     <item name="borderlessButtonStyle">@style/MiSnapTheme.Button.Borderless</item>
-    <item name="android:alertDialogStyle">@style/MiSnapTheme.Dialog</item>
+    <item name="android:alertDialogStyle">@style/MyViaTheme.Dialog</item>
+    <item name="android:fontFamily">@font/roboto_bold</item>
+
+  </style>
+
+  <style name="MyViaTheme.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+    <item name="materialAlertDialogBodyTextStyle">
+      @style/MiSnapTheme.TextAppearance.Headline.Medium
+    </item>
+    <item name="android:backgroundDimAmount">0.7</item>
+  </style>
+
+  <style name="MiSnapTheme.TextAppearance.Headline.Medium" parent="@style/TextAppearance.AppCompat.Medium">
+    <item name="android:textSize">23sp</item>
+    <item name="autoSizeMaxTextSize">23sp</item>
+    <item name="autoSizeMinTextSize">14sp</item>
+    <item name="autoSizeTextType">uniform</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:hint">@color/white</item>
+    <item name="android:fontFamily">@font/roboto_bold</item>
+  </style>
+
+  <style name="MyViaTheme.Button" parent="@style/Widget.MaterialComponents.Button">
+    <item name="android:textSize">18sp</item>
+    <item name="android:lines">11</item>
+    <item name="autoSizeMaxTextSize">18sp</item>
+    <item name="autoSizeMinTextSize">18sp</item>
+    <item name="autoSizeTextType">uniform</item>
+    <item name="android:fontFamily">@font/roboto_bold</item>
   </style>
 </resources>

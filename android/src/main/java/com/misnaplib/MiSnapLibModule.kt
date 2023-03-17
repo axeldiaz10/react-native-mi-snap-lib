@@ -16,7 +16,10 @@ import com.miteksystems.misnap.workflow.MiSnapWorkflowActivity
 import com.miteksystems.misnap.workflow.MiSnapWorkflowError
 import com.miteksystems.misnap.workflow.MiSnapWorkflowStep
 import com.miteksystems.misnap.workflow.fragment.DocumentAnalysisFragment
+import com.miteksystems.misnap.workflow.fragment.FailoverFragment
 import com.miteksystems.misnap.workflow.fragment.HelpFragment
+import com.miteksystems.misnap.workflow.fragment.NavigationAction
+import com.miteksystems.misnap.workflow.util.FailoverReasonsHandler
 import java.util.Locale
 import java.util.concurrent.Callable
 
@@ -64,8 +67,15 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
           successViewShouldVibrate = true,
           reviewCondition = DocumentAnalysisFragment.ReviewCondition.ALWAYS
         )
+      val failOverFragmentWorkflowSettings =
+        FailoverFragment.buildWorkflowSettings(
+        headerLayoutId = R.layout.failover_header_my_via
+      )
 
       (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowHelpFragmentLabel)
+
+      FailoverFragment.buildWorkflowSettings()
+
 
       val settings = MiSnapSettings(
         useCase = useCase,
@@ -78,6 +88,11 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
         workflow.add(
           (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowDocumentAnalysisFragmentLabel),
           documentAnalysisFragmentWorkflowSettings
+        )
+
+        workflow.add(
+          (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowFailoverFragmentLabel),
+          failOverFragmentWorkflowSettings
         )
       }
 

@@ -13,8 +13,6 @@ import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
 import com.misnaplib.MainActivityResult;
-import com.zeugmasolutions.localehelper.LocaleHelper;
-import com.zeugmasolutions.localehelper.LocaleHelperApplicationDelegate;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -35,9 +33,9 @@ public class MainActivity extends ReactActivity implements MainActivityResult {
   }
 
   @Override
-protected void onCreate(Bundle savedInstanceState) {
-  super.onCreate(null);
-}
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
+  }
 
   /**
    * Returns the instance of the {@link ReactActivityDelegate}. Here we use a util class {@link
@@ -47,13 +45,13 @@ protected void onCreate(Bundle savedInstanceState) {
   @Override
   protected ReactActivityDelegate createReactActivityDelegate() {
     return new DefaultReactActivityDelegate(
-        this,
-        getMainComponentName(),
-        // If you opted-in for the New Architecture, we enable the Fabric Renderer.
-        DefaultNewArchitectureEntryPoint.getFabricEnabled(), // fabricEnabled
-        // If you opted-in for the New Architecture, we enable Concurrent React (i.e. React 18).
-        DefaultNewArchitectureEntryPoint.getConcurrentReactEnabled() // concurrentRootEnabled
-        );
+      this,
+      getMainComponentName(),
+      // If you opted-in for the New Architecture, we enable the Fabric Renderer.
+      DefaultNewArchitectureEntryPoint.getFabricEnabled(), // fabricEnabled
+      // If you opted-in for the New Architecture, we enable Concurrent React (i.e. React 18).
+      DefaultNewArchitectureEntryPoint.getConcurrentReactEnabled() // concurrentRootEnabled
+    );
   }
 
   Callable<Void> onActivityResult;
@@ -75,45 +73,8 @@ protected void onCreate(Bundle savedInstanceState) {
   }
 
   @Override
-  public void setupLocale(@NotNull String language, @NotNull Function0<Unit> applied) {
-    Handler mainHandler = new Handler(getMainLooper());
-
-    Runnable myRunnable = () -> {
-      String locale = "en-US";
-      if (language.equalsIgnoreCase("es")) {
-        locale = "es-US";
-      }
-
-      LocaleListCompat newLocale = LocaleListCompat.forLanguageTags(locale);
-
-      if (AppCompatDelegate.getApplicationLocales().toLanguageTags().equals(newLocale.toLanguageTags())) {
-        System.out.println("MYSNAP Locale already applied");
-        applied.invoke();
-      } else {
-        this.onLocaleSet = applied;
-      }
-
-      AppCompatDelegate.setApplicationLocales(newLocale);
-    };
-
-    mainHandler.post(myRunnable);
-  }
-
-  private LocaleHelperApplicationDelegate localeAppDelegate = new LocaleHelperApplicationDelegate();
-
-
-  @Override
-  public void attachBaseContext(Context base) {
-    super.attachBaseContext(localeAppDelegate.attachBaseContext(base));
-  }
-
-
-  @Override
   public void onConfigurationChanged(Configuration newConfig) {
     super.onConfigurationChanged(newConfig);
-    System.out.println("MYSNAP New Locale Applied: " + newConfig.locale.toString());
-
-    localeAppDelegate.onConfigurationChanged(this);
 
     try {
       this.onLocaleSet.invoke();
@@ -121,23 +82,28 @@ protected void onCreate(Bundle savedInstanceState) {
     } catch (Exception e) {
       e.printStackTrace();
     }
+
+    System.out.println("MYSNAP New Locale Applied: " + newConfig.locale.toString());
   }
 
   @Override
-  public Context getApplicationContext() {
-    return LocaleHelper.INSTANCE.onAttach(super.getApplicationContext());
-  }
-
-  private void setLocale(Locale locale) {
-    Resources resources = getResources();
-    Configuration configuration = resources.getConfiguration();
-    DisplayMetrics displayMetrics = resources.getDisplayMetrics();
-    configuration.setLocale(locale);
-    if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N){
-      getApplicationContext().createConfigurationContext(configuration);
-    } else {
-      resources.updateConfiguration(configuration,displayMetrics);
+  public void setupLocale(@NotNull String language, @NotNull Function0<Unit> applied) {
+    String locale = "en-US";
+    if (language.equalsIgnoreCase("es")) {
+      locale = "es-US";
     }
-  }
 
+    LocaleListCompat newLocale = LocaleListCompat.forLanguageTags(locale);
+
+    System.out.println("MYSNAP New Locale: " + newLocale.toLanguageTags() + " from "+ locale +" with input: " + language + " and old locale: "+AppCompatDelegate.getApplicationLocales().toLanguageTags());
+
+    if (AppCompatDelegate.getApplicationLocales().toLanguageTags().equals(newLocale.toLanguageTags())) {
+      System.out.println("MYSNAP Locale already applied");
+      applied.invoke();
+    } else {
+      this.onLocaleSet = applied;
+    }
+
+    AppCompatDelegate.setApplicationLocales(newLocale);
+  }
 }
