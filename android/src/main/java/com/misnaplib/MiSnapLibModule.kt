@@ -64,19 +64,10 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
         headerLayoutId = R.layout.failover_header_my_via
       )
 
-      (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowHelpFragmentLabel)
-
-      FailoverFragment.buildWorkflowSettings()
-
-
       val settings = MiSnapSettings(
         useCase = useCase,
         license = license
       ).apply {
-        workflow.add(
-          (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowHelpFragmentLabel),
-          helpFragmentWorkflowSettings
-        )
         workflow.add(
           (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowFailoverFragmentLabel),
           failOverFragmentWorkflowSettings
