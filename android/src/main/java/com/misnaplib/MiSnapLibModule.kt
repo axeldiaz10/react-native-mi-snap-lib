@@ -56,17 +56,9 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
 
       val helpFragmentWorkflowSettings =
         HelpFragment.buildWorkflowSettings(
-          showSkipCheckBox = false
+          showSkipCheckBox = true
         )
-      val documentAnalysisFragmentWorkflowSettings =
-        DocumentAnalysisFragment.buildWorkflowSettings(
-          timeoutDuration = 15_000,
-          manualButtonDrawableId = android.R.drawable.ic_menu_camera,
-          guideViewShowVignette = true,
-          hintViewShouldShowBackground = true,
-          successViewShouldVibrate = true,
-          reviewCondition = DocumentAnalysisFragment.ReviewCondition.ALWAYS
-        )
+
       val failOverFragmentWorkflowSettings =
         FailoverFragment.buildWorkflowSettings(
         headerLayoutId = R.layout.failover_header_my_via
@@ -85,11 +77,6 @@ class MiSnapLibModule(reactContext: ReactApplicationContext) :
           (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowHelpFragmentLabel),
           helpFragmentWorkflowSettings
         )
-        workflow.add(
-          (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowDocumentAnalysisFragmentLabel),
-          documentAnalysisFragmentWorkflowSettings
-        )
-
         workflow.add(
           (currentActivity as Activity).getString(R.string.misnapWorkflowDocumentAnalysisFlowFailoverFragmentLabel),
           failOverFragmentWorkflowSettings
